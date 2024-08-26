@@ -7,8 +7,14 @@ dotenv.config();
 
 const app = express();
 
-// Middleware
-app.use(cors());
+// Middleware to enable CORS with specific headers
+app.use(cors({
+  origin: 'http://localhost:3000', // Allow requests only from this origin
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'x-auth-token'], // Explicitly allow the x-auth-token header
+}));
+
+// Middleware to parse JSON requests
 app.use(express.json());
 
 // Connect to MongoDB using Mongoose
