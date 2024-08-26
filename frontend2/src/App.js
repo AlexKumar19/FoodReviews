@@ -5,10 +5,12 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import PostDetails from './pages/PostDetails';
 
+
 function App() {
   return (
     <Router>
       <div className="App">
+       
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
@@ -21,3 +23,4 @@ function App() {
 }
 
 export default App;
+

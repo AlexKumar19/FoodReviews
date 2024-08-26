@@ -1,0 +1,114 @@
+/* src/styles/caltechTheme.css */
+
+/* Define color variables for consistency */
+:root {
+    --caltech-orange: #FF6F21; /* Caltech's signature orange color */
+    --caltech-dark-orange: #D55A1C;
+    --caltech-light-orange: #FF8C42;
+    --caltech-gray: #333333;
+    --caltech-light-gray: #f0f0f0;
+    --caltech-white: #ffffff;
+  }
+  
+  /* General styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--caltech-light-gray);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Main container */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--caltech-white);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header styles */
+  header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--caltech-orange);
+    color: var(--caltech-white);
+    border-bottom: 4px solid var(--caltech-dark-orange);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 32px;
+  }
+  
+  /* Navigation styles */
+  nav {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--caltech-orange);
+  }
+  
+  nav ul li a:hover {
+    color: var(--caltech-dark-orange);
+  }
+  
+  /* Post feed styles */
+  .feed {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .post {
+    padding: 20px;
+    border: 1px solid var(--caltech-light-gray);
+    border-radius: 8px;
+    background-color: var(--caltech-white);
+  }
+  
+  .post h3 {
+    margin-top: 0;
+    font-size: 24px;
+    color: var(--caltech-orange);
+  }
+  
+  .post p {
+    font-size: 16px;
+    color: var(--caltech-gray);
+  }
+  
+  .read-more {
+    color: var(--caltech-dark-orange);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .read-more:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer styles */
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: var(--caltech-light-gray);
+    color: var(--caltech-gray);
+  }
+  
